@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=1">
+    <link rel="stylesheet" href="responsive.css">
+    <link href='https://fonts.googleapis.com/
+    css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+    <title>François Van Heerden Optometrist</title>
+</head>
+
+<body>
+	<?php
+		include("form.php");
+	?>
+    <div class="fixed-header">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>                        
+                </button>
+                <a class="navbar-brand" href="#">François Van Heerden Optometrist</a>
+            </div>
+            <nav class="main-menu">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#clients">Clients</a></li>
+                    <li><a class="external" href="https://www.facebook.com//1234FrancoisvanHeerdenOptometrists" target="_blank">External</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    
+    <div class="container">
+        <section class="col-md-12 content" id="home">
+           <div class="col-lg-6 col-md-6 content-item">
+               <img src="images/image1.jpg" alt="Image" class="tm-image">
+           </div>
+           <div class="col-lg-6 col-md-6 content-item content-item-1 background">
+               <h2 class="main-title text-center dark-blue-text">Affordable Eye Care</h2>
+               <p>We always have great cash specials available to suite your needs and pocket.<br><br>We do have specials for pensioners and people without medical aid, we are also contracted to all medical aids in South Africa.</p>
+               <p>For all Optical needs, we do Colour Contact Lenses as well as Fashionable Spectacle Frames.</p>            
+           </div>
+       </section>
+
+       <section class="col-md-12 content padding" id="services">
+        <div class="col-lg-6 col-md-6 col-md-push-6 content-item">
+           <img src="images/image2.jpg" alt="Image" class="tm-image">
+       </div>
+       <div class="col-lg-6 col-md-6 col-md-pull-6 content-item background flexbox">
+           <h2 class="section-title">Quility Services</h2>
+           <p class="section-text">We believe in keeping our customers happy. We offer a free drivers licence test to our existing customers as a service. Come and get a free trial pair of contact lenses. Try our fun colors, for sporting activities or functions!</p>
+           <ul class="dark-blue-text">
+               <li>+ Affordable Eye Tests</li>
+               <li>+ Helpful Staff</li>
+               <li>+ Experienced Optometrist</li>
+               <li>+ Wide range of frames in various styles</li>
+           </ul>
+           <p>Visual evaluations, we diagnose and compensate where visual correction is needed with spactacles and contact lenses. We go the extra mile!</p>
+           <p>We are always available on WhatsApp for any queries and for booking appointments.</p>
+       </div>
+
+   </section>
+
+
+   <section class="col-md-12 content" id="clients">
+       <div class="col-lg-6 col-md-6 content-item">
+           <img src="images/image3.jpg" alt="Image" class="tm-image">
+       </div>
+       <div class="col-lg-6 col-md-6 content-item background flexbox">
+           <h2 class="section-title">Our Clients</h2>
+           <p>We will not stop until our clients are happy, we only use the best Lens Labs and go the extra mile, everyday!</p>
+           <p class="dark-blue-text">"Superb service. Exceptional workmanship. Very proffesional. Will definitely see them again. I will gladly recommend them to everyone! Thank you Francois van Heerden." - Cathy Oelofsen</p>
+           <p class="dark-blue-text">"This is the best service I had in years. Profesional and kind and more than helpful. Straight forward answers and advise. Best prices not to be missed. True value for money!" - Debbie Meyer</p>         
+       </div>
+   </section>
+
+
+   <section class="col-md-12 content" id="contact">
+       <div class="col-lg-6 col-md-6 col-md-push-6 content-item">
+           <img src="images/image4.jpg" alt="Image" class="tm-image">
+       </div>
+       <div class="col-lg-6 col-md-6 col-md-pull-6 content-item background flexbox">
+           <h2 class="section-title">Contact Us</h2>
+           <p class="margin-b-25">Feel free to contact us, or leave us your information and we'll get back to you as soon as possible.</p>
+
+           <!--<div class="row"> -->
+           <form method="post" name="contact-form" class="contact-form">
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                <div class="form-group">
+                    <input name="name" type="text" class="form-control" id="name" placeholder="Your Name..." required>
+                </div>    
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 pad-l-3">
+                <div class="form-group contact-field">
+                    <input name="email" type="email" class="form-control" id="email" placeholder="Your Email..." required>
+                </div>    
+            </div>
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="form-group contact-field">
+                    <input name="subject" type="text" class="form-control" id="subject" placeholder="Your Subject..." required>
+                </div>    
+            </div>
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="form-group contact-field">
+                    <textarea name="message" rows="5" class="form-control" id="message" placeholder="Write your message..." required></textarea>
+                </div>    
+            </div>
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="form-group margin-b-0">
+                    <button type="submit" id="form-submit" class="btn no-bg btn-contact">Submit</button>
+                </div>    
+            </div>
+        </form>
+        <!--</div> -->
+        <div id="msgSubmit" class="h3 text-center hidden">Message Submitted!</div>
+
+    </div>
+
+</section>
+
+<footer class="col-md-12 content" id="externals">
+ <div class="col-lg-6 col-md-6 last">
+   <img src="images/image5.jpg" alt="Image" class="tm-image">
+</div>
+<div class="col-lg-6 col-md-6 background last about-text-container">
+   <h2 class="section-title">More About us</h2>
+   <p class="about-text">Reach us on WhatsApp or Call us:<p class="dark-blue-text">066 238 1400</p>
+</div>
+</footer>
+
+</div>
+
+<div class="text-center footer">
+	<div class="container">
+		© TheOnlyGeeman 2022
+    </div>
+</div>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.singlePageNav.min.js"></script>
+
+<script>
+
+// Check scroll position and add/remove background to navbar
+function checkScrollPosition() {
+    if($(window).scrollTop() > 50) {
+      $(".fixed-header").addClass("scroll");
+  } else {        
+      $(".fixed-header").removeClass("scroll");
+  }
+}
+
+$(document).ready(function () {   
+    // Single page nav
+    $('.fixed-header').singlePageNav({
+        offset: 59,
+        filter: ':not(.external)',
+        updateHash: true        
+    });
+
+    checkScrollPosition();
+
+    // nav bar
+    $('.navbar-toggle').click(function(){
+        $('.main-menu').toggleClass('show');
+    });
+
+    $('.main-menu a').click(function(){
+        $('.main-menu').removeClass('show');
+    });
+});
+
+$(window).on("scroll", function() {
+    checkScrollPosition();    
+});
+</script>
+</body>
+</html>
