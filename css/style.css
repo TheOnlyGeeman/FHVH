@@ -118,7 +118,7 @@ p{
 }
 .background {
     background-color: #fff;
-    padding: 55px 45px;
+    padding: 40px 40px;
 }
 .about-text-container {
     font-style: italic;
@@ -140,8 +140,8 @@ p{
     font-weight: 300;
     font-size: 34px;
     line-height: 1.4;
-    margin-top: 70px;
-    margin-bottom: 70px;
+    /*margin-top: 30px;*/
+    margin-bottom: 30px;
 }
 .section-title {
     font-size: 1.5em;
@@ -295,6 +295,12 @@ p{
     margin-bottom: 25px;
 }
 
+@media screen and (max-width: 768px) {
+    .navbar-brand {
+        font-size: 20px;
+    }
+}
+
 @media screen and (max-width:1199px){
     .content-item {
         min-height: 470px !important;
@@ -387,7 +393,9 @@ p{
         min-height: inherit !important;
     }
     .fixed-header.scroll .navbar-brand {
-        padding: 12px 15px 0;
+        padding: 12px 15px 0px;
+        font-size: 20px;
+        margin-bottom: 10px;
     }
     .navbar-toggle {
        display:block;
